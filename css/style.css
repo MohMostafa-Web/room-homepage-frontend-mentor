@@ -208,12 +208,7 @@ header nav ul li a {
   text-align: center;
   position: absolute;
   bottom: 0;
-  right: -168px;
-}
-@media (min-width: 1439px) {
-  .slider .slides-viewer .controls {
-    right: -180px;
-  }
+  right: -148px;
 }
 @media (max-width: 1199px) {
   .slider .slides-viewer .controls {
@@ -222,17 +217,7 @@ header nav ul li a {
 }
 .slider .slides-viewer .controls a {
   background-color: var(--black);
-  padding: 30px 35px;
-}
-@media (min-width: 1439px) {
-  .slider .slides-viewer .controls a {
-    padding: 30px 38px;
-  }
-}
-@media (max-width: 767px) {
-  .slider .slides-viewer .controls a {
-    padding: 25px 30px;
-  }
+  padding: 25px 30px;
 }
 @media (max-width: 575px) {
   .slider .slides-viewer .controls a {

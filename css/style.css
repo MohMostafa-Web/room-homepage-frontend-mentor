@@ -208,7 +208,7 @@ header nav ul li a {
   text-align: center;
   position: absolute;
   bottom: 0;
-  right: -148px;
+  right: -136px;
 }
 @media (max-width: 1199px) {
   .slider .slides-viewer .controls {
@@ -217,7 +217,7 @@ header nav ul li a {
 }
 .slider .slides-viewer .controls a {
   background-color: var(--black);
-  padding: 25px 30px;
+  padding: 25px 27px;
 }
 @media (max-width: 575px) {
   .slider .slides-viewer .controls a {

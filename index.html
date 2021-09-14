@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <!-- Fontawesome Library -->
+  <link rel="stylesheet" href="css/all.min.css">
+  <!-- Normalize CSS File | Render All Elements Normally -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap" rel="stylesheet">
+  <!-- Main CSS File -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Room homepage</title>
+</head>
+<body>
+  <!-- Start Header -->
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="images/logo.svg" alt="logo">
+      </div>
+      <nav>
+        <img class="toggle-menu active" src="images/icon-hamburger.svg" alt="bars">
+        <img class="close" src="images/icon-close.svg" alt="close">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- End Header -->
+  <!-- Start Overlay -->
+  <section class="overlay"></section>
+  <!-- End Overlay -->
+  <!-- Start Slider -->
+  <section class="slider">
+    <div class="slides-viewer">
+      <div class="slide-img">
+        <img class="active" src="images/desktop-image-hero-1.jpg" alt="img_slide_01">
+        <img src="images/desktop-image-hero-2.jpg" alt="img_slide_02">
+        <img src="images/desktop-image-hero-3.jpg" alt="img_slide_03">
+      </div>
+      <div class="controls">
+        <a class="prev" href="#">
+          <img src="images/icon-angle-left.svg" alt="angle-left">
+        </a>
+        <a class="next" href="#">
+          <img src="images/icon-angle-right.svg" alt="angle-right">
+        </a>
+      </div>
+    </div>
+    <div class="slides-content">
+      <div class="container">
+        <div class="slide slide-one active">
+          <h2>Discover innovative ways to decorate</h2>
+          <p class="main-paragraph">
+            We provide unmatched quality, comfort, and style for property owners across the country. 
+            Our experts combine form and function in bringing your vision to life. Create a room in your 
+            own style with our collection and make your property a reflection of you and what you love.
+          </p>
+          <a href="#">Shop now <img src="images/icon-arrow.svg" alt="arrow"></a>
+        </div>
+        <div class="slide slide-two">
+          <h2>We are available all across the globe</h2>
+          <p class="main-paragraph">
+            With stores all over the world, it's easy for you to find furniture for your home or place of business. 
+            Locally, we’re in most major cities throughout the country. Find the branch nearest you using our 
+            store locator. Any questions? Don't hesitate to contact us today.
+          </p>
+          <a href="#">Shop now <img src="images/icon-arrow.svg" alt="arrow"></a>
+        </div>
+        <div class="slide slide-three">
+          <h2>Manufactured with the best materials</h2>
+          <p class="main-paragraph">
+            Our modern furniture store provide a high level of quality. Our company has invested in advanced technology 
+            to ensure that every product is made as perfect and as consistent as possible. With three decades of 
+            experience in this industry, we understand what customers want for their home and office.
+          </p>
+          <a href="#">Shop now <img src="images/icon-arrow.svg" alt="arrow"></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Slider -->
+  <!-- Start About -->
+  <section class="about">
+    <div class="image">
+      <img src="images/image-about-dark.jpg" alt="dark-img">
+    </div>
+    <div class="about-info">
+      <div class="container">
+        <h3>About our furniture</h3 >
+        <p class="main-paragraph">
+          Our multifunctional collection blends design and function to suit your individual taste.
+          Make each room unique, or pick a cohesive theme that best express your interests and what
+          inspires you. Find the furniture pieces you need, from traditional to contemporary styles
+          or anything in between. Product specialists are available to help you create your dream space.
+        </p>
+      </div>
+    </div>
+    <div class="image">
+      <img src="images/image-about-light.jpg" alt="light-img">
+    </div>
+  </section>
+  <!-- End About -->
+  <script src="js/main.js"></script>
+</body>
+</html>

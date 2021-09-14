@@ -210,31 +210,40 @@ header nav ul li a {
   bottom: 0;
   right: -168px;
 }
+@media (min-width: 1439px) {
+  .slider .slides-viewer .controls {
+    right: -180px;
+  }
+}
 @media (max-width: 1199px) {
   .slider .slides-viewer .controls {
-    bottom: 0;
     right: 0;
   }
 }
-.slider .controls a {
+.slider .slides-viewer .controls a {
   background-color: var(--black);
   padding: 30px 35px;
 }
+@media (min-width: 1439px) {
+  .slider .slides-viewer .controls a {
+    padding: 30px 38px;
+  }
+}
 @media (max-width: 767px) {
-  .slider .controls a {
+  .slider .slides-viewer .controls a {
     padding: 25px 30px;
   }
 }
 @media (max-width: 575px) {
-  .slider .controls a {
+  .slider .slides-viewer .controls a {
     padding: 20px 25px;
   }
 } 
-.slider .controls a img {
+.slider .slides-viewer .controls a img {
   display: block;
 }
-.slider .controls a:hover,
-.slider .controls a.active {
+.slider .slides-viewer .controls a:hover,
+.slider .slides-viewer .controls a.active {
   background-color: var(--very-dark-gray);
 }
 .slider .slides-content {
@@ -257,6 +266,11 @@ header nav ul li a {
 }
 .slider .slides-content .slide h2 {
   font-size: 32px;
+}
+@media (min-width: 1439px) {
+  .slider .slides-content .slide h2 {
+    font-size: 38px;
+  }
 }
 @media (max-width: 575px) {
   .slider .slides-content .slide h2 {
@@ -342,6 +356,6 @@ header nav ul li a {
   text-transform: uppercase;
   letter-spacing: 5px;
   margin-bottom: 15px;
-  font-size: 14px;
+  font-size: 13px;
 }
 /* End About */

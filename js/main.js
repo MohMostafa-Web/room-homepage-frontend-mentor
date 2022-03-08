@@ -30,18 +30,17 @@ closeButton.onclick = function () {
 const sliderImages = Array.from(document.querySelectorAll('.slider .slide-img img'));
 const slidesContent = document.querySelectorAll('.slider .container .slide');
 
-console.log(sliderImages.length);
 
 // Get Previous and Next Buttons
 const prevButton = document.querySelector('.slider .controls .prev');
 const nextButton = document.querySelector('.slider .controls .next');
 
 // Create variable currentSlider
-let currentSlider = 1;
+let currentSlider = 0;
 
 nextButton.onclick= function () {
-  if (currentSlider === sliderImages.length) {
-    currentSlider = 1;
+  if (currentSlider === sliderImages.length - 1) {
+    currentSlider = 0;
   } else {
     currentSlider++;
   }
@@ -49,8 +48,8 @@ nextButton.onclick= function () {
 }
 
 prevButton.onclick= function () {
-  if (currentSlider === 1) {
-    currentSlider = sliderImages.length;
+  if (currentSlider === 0) {
+    currentSlider = sliderImages.length - 1;
   } else {
     currentSlider--;
   }
@@ -63,11 +62,11 @@ function sliding() {
   sliderImages.forEach( img => {
     img.classList.remove("active");
   });
-  sliderImages[currentSlider - 1].classList.add("active");
+  sliderImages[currentSlider].classList.add("active");
 
   // Remove Class "active" from all slides Content and add Class "active" to current slide Content
   slidesContent.forEach(slide => {
     slide.classList.remove("active")
   });
-  slidesContent[currentSlider - 1].classList.add("active");
+  slidesContent[currentSlider].classList.add("active");
 }

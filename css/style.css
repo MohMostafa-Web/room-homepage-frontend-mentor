@@ -198,7 +198,7 @@ header nav ul li a {
 }
 @media (max-width: 575px) {
   .slider .slides-viewer .slide-img {
-    max-height: 22rem;
+    min-height: 50vh;
   }
 }
 .slider .slides-viewer .slide-img img {
@@ -228,31 +228,37 @@ header nav ul li a {
     right: 0;
   }
 }
-.slider .slides-viewer .controls a {
+.slider .slides-viewer .controls button {
   background-color: var(--black);
   padding: 25px 27px;
+  border: none;
 }
 @media (max-width: 575px) {
-  .slider .slides-viewer .controls a {
+  .slider .slides-viewer .controls button {
     padding: 20px 25px;
   }
 }
-.slider .slides-viewer .controls a img {
+.slider .slides-viewer .controls button img {
   display: block;
 }
-.slider .slides-viewer .controls a:hover,
-.slider .slides-viewer .controls a.active {
+.slider .slides-viewer .controls button:hover,
+.slider .slides-viewer .controls button.active {
   background-color: var(--very-dark-gray);
 }
 .slider .slides-content {
   width: 40%;
-  min-height: 16rem;
-  padding: 70px 50px;
+  min-height: 18rem;
+  padding: 70px 50px 0;
 }
 @media (max-width: 1199px) {
   .slider .slides-content {
     width: 100%;
-    padding: 50px 15px;
+    padding: 50px 15px 0;
+  }
+}
+@media (max-width: 575px) {
+  .slider .slides-content {
+    min-height: 20rem;
   }
 }
 .slider .slides-content .container {
@@ -381,7 +387,7 @@ header nav ul li a {
 .attribution {
   background-color: var(--black);
   color: #fff;
-  padding: 20px;
+  padding: 20px 0;
   text-align: center;
   font-size: 11px;
 }
